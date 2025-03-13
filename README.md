@@ -1,7 +1,7 @@
 # Towards Next-Generation Recommender Systems: A Benchmark for Personalized Recommendation Assistant with LLMs
 [![arXiv](https://img.shields.io/badge/arXiv-2503.09382-b31b1b.svg)](https://arxiv.org/abs/2503.09382)
 
-This repository contains the benchmark for the paper ["<u>Towards Next-Generation Recommender Systems: A Benchmark for Personalized Recommendation Assistant with LLMs</u>"].
+This repository contains the benchmark for the paper "<u>Towards Next-Generation Recommender Systems: A Benchmark for Personalized Recommendation Assistant with LLMs</u>".
 
 **RecBench+** is the first public datasets that can be effectively used to evaluate the performance of personalized recommendation assistants in the era of LLMs. The dataset comprises approximately 30,000 queries, spanning the domains of movie and book, constructed from movielens-1m and Amazon-Book, respectively. It is organized into 2 main categories and 5 subcategories. Below is the statistics of our benchmark.
 
