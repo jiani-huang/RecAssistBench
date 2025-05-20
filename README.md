@@ -199,7 +199,7 @@ who share the same demographic attributes (e.g., students age 18–24), we can e
 </pre>
 
 ## Usage
-./dataset: the benchmark 
+./dataset: the benchmark dataset
 
 ./llm_results: the prompts and results of 7 LLMs on Movie and Book
 
