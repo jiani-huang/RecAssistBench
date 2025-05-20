@@ -1,0 +1,142 @@
+{
+    "nodes": [
+      {
+        "type": "Movie",
+        "attributes": ["movie_id","wiki_name","title", "release_date", "runtime", "budget", "box_office", "rating"]
+      },
+      {
+        "type": "Person",
+        "attributes": ["name", "birth_date", "nationality", "occupation"]
+      },
+      {
+        "type": "Book",
+        "attributes": ["title", "author", "publication_date", "isbn", "genre"]
+      },
+      {
+        "type": "Corporation",
+        "attributes": ["name", "founded_date", "headquarters", "industry"]
+      },
+      {
+        "type": "Thing",
+        "attributes": ["name", "description", "category"]
+      },
+      {
+        "type": "Country",
+        "attributes": ["name", "capital", "population", "official_language"]
+      },
+      {
+        "type": "Genre",
+        "attributes": []
+      }
+    ],
+    "relations": [
+      {
+        "type": "Directed_by",
+        "source": "Movie",
+        "target": "Person",
+        "attributes": []
+      },
+      {
+        "type": "Produced_by",
+        "source": "Movie",
+        "target": "Corporation",
+        "attributes": []
+      },
+      {
+        "type": "Written_by",
+        "source": "Movie",
+        "target": "Person",
+        "attributes": []
+      },
+      {
+        "type": "Based_on",
+        "source": "Movie",
+        "target": "Book",
+        "attributes": []
+      },
+      {
+        "type": "Starring",
+        "source": "Movie",
+        "target": "Person",
+        "attributes": []
+      },
+      {
+        "type": "Screenplay_by",
+        "source": "Movie",
+        "target": "Person",
+        "attributes": []
+      },
+      {
+        "type": "Color_process",
+        "source": "Movie",
+        "target": "Thing",
+        "attributes": []
+      },
+      {
+        "type": "Narrated_by",
+        "source": "Movie",
+        "target": "Person",
+        "attributes": []
+      },
+      {
+        "type": "Cinematography",
+        "source": "Movie",
+        "target": "Person",
+        "attributes": []
+      },
+      {
+        "type": "Edited_by",
+        "source": "Movie",
+        "target": "Person",
+        "attributes": []
+      },
+      {
+        "type": "Music_by",
+        "source": "Movie",
+        "target": "Person",
+        "attributes": []
+      },
+      {
+        "type": "Distributed_by",
+        "source": "Movie",
+        "target": "Corporation",
+        "attributes": []
+      },
+      {
+        "type": "Language",
+        "source": "Movie",
+        "target": "Thing",
+        "attributes": []
+      },
+      {
+        "type": "Genre",
+        "source": "Movie",
+        "target": "Genre",
+        "attributes": []
+      },
+      {
+        "type": "Production_Country",
+        "source": "Movie",
+        "target": "Country",
+        "attributes": []
+      }
+    ],
+    "relation_mappings": {
+        "Directed_by": ["Directed_by", "Producer", "Created_by", "Executive_producers","Producer(s)","Producers"],
+        "Produced_by": ["Produced_by", "Productioncompanies", "Productioncompany", "Production_company", "Production_companies"],
+        "Written_by": ["Written_by", "Story_by"],
+        "Based_on": ["Based_on"],
+        "Starring": ["Starring"],
+        "Screenplay_by": ["Screenplay_by"],
+        "Color_process": ["Color_process"],
+        "Narrated_by": ["Narrated_by"],
+        "Cinematography": ["Cinematography"],
+        "Edited_by": ["Edited_by"],
+        "Music_by": ["Music_by", "Theme_music_composer", "Composer"],
+        "Distributed_by": ["Distributed_by"],
+        "Language": ["Language", "Languages"],
+        "Genre": ["Genre", "Genres", "Genre(s)"],
+        "Production_Country": ["Production_Country"]
+      }
+  }
+  

@@ -1,0 +1,35 @@
+{
+    "nodes": [
+      {
+        "type": "Book",
+        "attributes": ["name"]
+      },
+      {
+        "type": "Author",
+        "attributes": ["name"]
+      },
+      {
+        "type": "Book",
+        "attributes": ["title", "author", "publication_date", "isbn", "genre"]
+      },
+      {
+        "type": "Category",
+        "attributes": ["name"]
+      }
+    ],
+    "relations": [
+      {
+        "type": "BELONGS_TO",
+        "source": "Book",
+        "target": "Category",
+        "attributes": []
+      },
+      {
+        "type": "WRITTEN_BY",
+        "source": "Book",
+        "target": "Author",
+        "attributes": []
+      }
+    ]
+  }
+  

@@ -1,9 +1,9 @@
 # Towards Next-Generation Recommender Systems: A Benchmark for Personalized Recommendation Assistant with LLMs
-[![arXiv](https://img.shields.io/badge/arXiv-2503.09382-b31b1b.svg)](https://arxiv.org/abs/2503.09382)
+<!-- [![arXiv](https://img.shields.io/badge/arXiv-2503.09382-b31b1b.svg)](https://arxiv.org/abs/2503.09382) -->
 
 This repository contains the benchmark for the paper "<u>Towards Next-Generation Recommender Systems: A Benchmark for Personalized Recommendation Assistant with LLMs</u>".
 
-**RecBench+** is the first public datasets that can be effectively used to evaluate the performance of personalized recommendation assistants in the era of LLMs. The dataset comprises approximately 30,000 queries, spanning the domains of movie and book, constructed from movielens-1m and Amazon-Book, respectively. It is organized into 2 main categories and 5 subcategories. Below is the statistics of our benchmark.
+**RecBench+** is the first public datasets that can be effectively used to evaluate the performance of personalized recommendation assistants in the era of LLMs. The dataset comprises approximately 30,000 queries, spanning the domains of movie and book, respectively. It is organized into 2 main categories and 5 subcategories. Below is the statistics of our benchmark.
 
 ![Statistics of RECALL Benchmark](./assets/statistics.png)
 
@@ -197,3 +197,9 @@ who share the same demographic attributes (e.g., students age 18–24), we can e
     }
 </code>
 </pre>
+
+## Usage
+./dataset: the benchmark dataset
+./llm_results: the prompts and results of 7 LLMs on Movie and Book
+./eval: codes for evaluating LLM results. You should first utilize ./dataset/KG.dump to create KG in neo4j before evaluation.
+./eval_results: evaluation results of 7 LLMs on Movie and Book
