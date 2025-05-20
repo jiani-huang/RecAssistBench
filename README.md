@@ -199,7 +199,10 @@ who share the same demographic attributes (e.g., students age 18–24), we can e
 </pre>
 
 ## Usage
-./dataset: the benchmark dataset
+./dataset: the benchmark 
+
 ./llm_results: the prompts and results of 7 LLMs on Movie and Book
+
 ./eval: codes for evaluating LLM results. You should first utilize ./dataset/KG.dump to create KG in neo4j before evaluation.
+
 ./eval_results: evaluation results of 7 LLMs on Movie and Book
